@@ -1,7 +1,7 @@
 @import url("font.css");
 @import url("reset.css");
 html, body {
-  font-size: 0.5208333333vw;
+  font-size: calc(100vw * 10/1920);
   font-family: "NotoSansKR";
 }
 
@@ -9,13 +9,8 @@ body {
   background: #f1f1f3;
 }
 
-.m_show {
-  display: none;
-}
-
-.m_hide {
-  display: block;
-}
+.m_show { display: none; }
+.m_hide { display: block; }
 
 .wrapper {
   max-width: 1920px;
@@ -23,25 +18,24 @@ body {
   padding-bottom: 20rem;
 }
 
-.contents img {
-  width: 100%;
+// contents 영역 
+.contents img { width: 100%; }
+
+// gallery 영역
+.gallery { padding: 0 0 16rem 0;
+  &__title {
+    font-size: 3.6rem;
+    text-align: center;
+    font-weight: 400;
+    line-height: 1;
+    padding-top: 6rem;
+  }
 }
 
-.gallery {
-  padding: 0 0 16rem 0;
-}
-.gallery__title {
-  font-size: 3.6rem;
-  text-align: center;
-  font-weight: 400;
-  line-height: 1;
-  padding-top: 6rem;
-}
-
+// button 영역
 .btn_wrap {
   text-align: center;
 }
-
 .inquiry_btn {
   cursor: pointer;
   display: inline-flex;
@@ -58,24 +52,16 @@ body {
   outline: 0;
 }
 
-a.inquiry_btn {
-  display: none;
-}
+a.inquiry_btn { display: none }
+
+
 
 @media screen and (max-width: 768px) {
   html, body {
     /* font-size: calc(100vw * 10/768); */
-  }
-  button.inquiry_btn {
-    display: none;
-  }
-  a.inquiry_btn {
-    display: inline-flex;
-  }
-  .m_show {
-    display: block;
-  }
-  .m_hide {
-    display: none;
-  }
-}/*# sourceMappingURL=style.css.map */
+  }  
+  button.inquiry_btn { display: none }
+  a.inquiry_btn { display: inline-flex }
+  .m_show { display: block; }
+  .m_hide { display: none; }
+}
