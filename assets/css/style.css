@@ -1,5 +1,33 @@
 @import url("font.css");
 @import url("reset.css");
 html, body {
+  font-size: calc(100vw * 10/1920);
   font-family: "NotoSansKR";
+}
+
+body {
+  background: #f1f1f3;
+}
+
+.m_show { display: none; }
+.m_hide { display: block; }
+
+.wrapper {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+/* contents 영역 */
+.contents img { width: 100%; }
+
+/* gallery 영역 */
+.gallery__title { font-size: 3.6rem; text-align: center; font-weight: 400; }
+
+
+@media screen and (max-width: 767px) {
+  html, body {
+    /* font-size: calc(100vw * 10/768); */
+  }  
+  .m_show { display: block; }
+  .m_hide { display: none; }
 }
