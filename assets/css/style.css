@@ -44,9 +44,6 @@ body {
 
 .inquiry_btn {
   cursor: pointer;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
   padding: 0;
   margin: 0;
   width: 112rem;
@@ -56,21 +53,23 @@ body {
   color: #fff;
   border: 0;
   outline: 0;
+  line-height: 1.2;
 }
 
 a.inquiry_btn {
   display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1400px) {
   html, body {
-    /* font-size: calc(100vw * 10/768); */
+    font-size: 0.6944444444vw;
   }
   button.inquiry_btn {
     display: none;
   }
   a.inquiry_btn {
-    display: inline-flex;
+    display: inline-block;
+    padding: 2.4rem 0;
   }
   .m_show {
     display: block;
